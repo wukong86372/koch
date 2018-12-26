@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="canvas.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>绘制雪花曲线</title>
+</head>
+
+<body onload="draw()">
+    <script src="draw.js"></script>
+    <div class="control_panel">
+        深度:&nbsp;
+        <select id="textDepth" class="select_css" style="width:40px;">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        &nbsp;
+        类型:&nbsp;
+        <select id="typeSelect" class="select_css">
+            <option value="1">三角形</option>
+            <option value="2">矩形</option>
+            <option value="3">五角星</option>
+            <option value="4">心形</option>
+        </select>
+        &nbsp;
+        颜色:&nbsp;
+        <input type="color" style="background: #fafdfe;border: 1px solid #9bc0dd;" value="#000000" id="koch_color" />
+        &nbsp &nbsp;
+        <input type="button" class="button_css" value="绘制" onclick="draw()" />
+    </div>
+    <div class="canvas_panel">
+        <canvas id="cantest" width="800px" height="800px"></canvas>
+    </div>  
+</body>
+
+</html>

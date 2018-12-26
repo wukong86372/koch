@@ -1,0 +1,56 @@
+canvas {
+    border: 2px solid #ffffff;
+    background: #ffffff;
+}
+
+.control_panel {
+    display: flex;
+    flex: 20px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.canvas_panel {
+    display: flex;
+    justify-content: center;
+}
+
+.select_css {
+    background: #fafdfe;
+    height: 25px;
+    width: 80px;
+    line-height: 28px;
+    border: 1px solid #9bc0dd;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.button_css {
+    /* 按钮美化 */
+    width: 60px;
+    /* 宽度 */
+    height: 26px;
+    /* 高度 */
+    border-width: 0px;
+    /* 边框宽度 */
+    border-radius: 3px;
+    /* 边框半径 */
+    background: #0066CC;
+    /* 背景颜色 */
+    cursor: pointer;
+    /* 鼠标移入按钮范围时出现手势 */
+    outline: none;
+    /* 不显示轮廓线 */
+    font-family: Microsoft YaHei;
+    /* 设置字体 */
+    color: #ffffff;
+    /* 字体颜色 */
+    font-size: 17px;
+    /* 字体大小 */
+}
+
+.button_css:hover {
+    /* 鼠标移入按钮范围时改变颜色 */
+    background: #0099FF;
+}
